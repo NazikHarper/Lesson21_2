@@ -1,0 +1,117 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+                        "header nav sidebar"
+                        "header content_1 content_1"
+                        "header row_1 row_2"
+                        "header content_2 content_2"
+                        "header footer footer";
+    grid-gap: 10px;
+    grid-template-columns: 300px 1fr 1fr ;          
+    grid-template-rows: 1fr 3fr 1fr 5fr 4fr 1fr;
+}
+.header{
+    background-color: red;
+    grid-area: header;
+}
+.nav{
+    background-color: yellow;
+    grid-area: nav;
+    height: 50px;
+}
+.sidebar{
+    background-color: rgb(243, 158, 1);
+    grid-area: sidebar;
+}
+.content_1{
+    background-color: tomato;
+    grid-area: content_1;
+}
+.row_1{
+    background-color: brown;
+    grid-area: row_1;
+
+}
+.row_2{
+    background-color: coral;
+    grid-area: row_2;
+}
+.content_2{
+    background-color: cyan;
+    grid-area: content_2;
+}
+.footer{
+    background-color: darkmagenta;
+    grid-area: footer;
+}
+.container_2 {
+    display: grid;
+    grid-template-areas: 
+                        "header2 k d m rk dm c"
+                        "header2 v w l rk dm c"
+                        "nav2 v w l rk dm c"
+                        "nav2 r g a rk dm c";
+    grid-gap: 10px;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.header2{
+    background-color: darkmagenta;
+    grid-area: header2;
+    height: 350px;
+}
+.k {
+    background-color: darkolivegreen;
+    grid-area: k;
+}
+.d {
+    background-color: darkorange;
+    grid-area: d;
+
+}
+.m {
+    background-color: darkorchid;
+    grid-area: m;
+}
+.rk{
+    background-color: darkred;
+    grid-area: rk;
+}
+.dm{
+    background-color: darksalmon;
+    grid-area: dm;
+}
+.c {
+    background-color: darkseagreen;
+    grid-area: c;
+}
+.v{
+    background-color: darkslateblue;
+    grid-area: v;
+
+}
+.w{
+    background-color: darkslategray;
+    grid-area: w;
+}
+.l{
+    background-color: darkturquoise;
+    grid-area: l;
+}
+.r {
+    background-color: darkviolet;
+    grid-area: r;
+}
+.nav2 {
+    background-color: deeppink;
+    grid-area: nav2;
+    height: 350px;
+}
+.g {
+    background-color: deepskyblue;
+    grid-area: g;
+}
+.a {
+    background-color: firebrick;
+    grid-area: a;
+}
